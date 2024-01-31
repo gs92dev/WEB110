@@ -1,0 +1,15 @@
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: purple;
+    transition: color 0.5s ease-out;
+}
+
+h1:hover {
+    color: brown;
+}
+
+p {
+    text-align: center;
+    font-size: 2rem;
+}
