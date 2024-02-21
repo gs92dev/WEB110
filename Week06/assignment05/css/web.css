@@ -2,19 +2,57 @@
 body {
     background-color: #FFFFFF;
     color: #555555;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
     background-color: #29485d;
     color: #FFFFFF;
+    background-image: url(../img/logo.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    line-height: 400%;
+    text-indent: 1em;
 }
 
 nav {
     background-color: #C6D02F;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 0;
 }
 
 h2 {
     color: #407386;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #29485d;
+}
+
+ul {
+    list-style: url(../img/marker.gif);
+}
+
+li {
+    line-height: 1.5;
+}
+
+footer {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 75%;
+    font-style: italic;
+    text-align: center;
+
 }
 
 dt {
@@ -23,8 +61,9 @@ dt {
 
 .web {
     color: #0194B5;
+    font-weight: bold;
 }
 
-h1 {
-    margin-bottom: 0;
+#contact {
+    font-size: 90%;
 }
