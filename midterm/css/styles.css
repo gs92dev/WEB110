@@ -1,10 +1,7 @@
-/* Guilherme dos Santos
+/* Guilherme dos Santos  */
 * {
     margin: 0;
-    padding: 0;
-    text-decoration: none;
     box-sizing: border-box;
-
 
 }
 
@@ -15,23 +12,53 @@
 
 .headernav {
     background-color: aqua;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     height: auto;
     display: block;
 
 }
 
-
+body {
+    width: 95%;
+    margin: 0 auto;
+}
 
 header {
     width: 50%;
-    display: inline-block;
-    margin-right: -4px;
+
 }
 
 nav {
     display: inline-block;
     width: 50%;
     margin: 0 auto;
-} */
+}
+
+nav ul {
+    display: inline;
+}
+
+nav+ul li {
+    display: inline-block;
+    color: blueviolet;
+}
+
+h2+ol li {
+    list-style: decimal;
+}
+
+ol {
+    font-family: 'Times New Roman', Times, serif;
+    list-style: upper-roman;
+}
+
+li li {
+    list-style: upper-alpha;
+
+}
+
+h4+ol li {
+    list-style-type: decimal;
+
+}
