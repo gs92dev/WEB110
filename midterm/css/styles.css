@@ -1,64 +1,165 @@
 /* Guilherme dos Santos  */
 * {
-    margin: 0;
     box-sizing: border-box;
-
-}
-
-:root {
-    --light-bg-color: rgba(217, 234, 233, 0.7);
-    --font-green: color: rgb(24, 88, 88);
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .headernav {
-    background-color: aqua;
     width: 100%;
     margin: 0 auto;
     height: auto;
     display: block;
+    text-align: center;
 
 }
 
 body {
-    width: 95%;
+    max-width: 85vw;
     margin: 0 auto;
+    background-color: rgba(217, 234, 233, 0.7);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1,
+h2 {
+    color: rgb(40, 119, 184);
+}
+
+h1 {
+    font-size: 2.3em;
+    line-height: 1.2;
+    margin: 0.8rem 0;
 }
 
 header {
-    width: 50%;
+    width: 100%;
 
 }
 
-nav {
-    display: inline-block;
-    width: 50%;
-    margin: 0 auto;
+.ulNav {
+    margin: 1.5rem 0rem;
+    list-style: none;
+
 }
 
-nav ul {
+.liNav {
     display: inline;
+    margin: auto 5%;
 }
 
-nav+ul li {
+.liNav a,
+.bookstore {
+    font-size: 1.2em;
+    line-height: 1.5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(20, 53, 53);
+    font-weight: 600;
+    text-decoration: none;
+    background:
+        linear-gradient(to right, rgba(100, 200, 200, 1), rgba(100, 200, 200, 1)),
+        linear-gradient(to right, rgb(36, 78, 43), rgb(255, 0, 0), rgb(236, 233, 21));
+    background-size: 100% 0.1em, 0 0.1em;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+    padding: 0 0.1em;
+}
+
+.liNav a:hover,
+.bookstore:hover {
+    background-size: 0 0.1em, 100% 0.1em;
+}
+
+.liNav a:focus,
+.bookstore:focus {
+    background-size: 0 0.1em, 100% 0.1em;
+    outline-color: rgb(15, 79, 79);
+    outline-offset: 0.1em;
+    outline-style: dashed;
+}
+
+p,
+li {
+    font-size: 1.2em;
+    line-height: 1.3;
+    color: rgb(20, 53, 53);
+}
+
+.courseIntroP {
+    max-width: 80%;
+    justify-content: center;
+    text-align: center;
+    color: rgb(20, 53, 53);
+    margin: 1em auto;
+    text-align: justify;
+}
+
+.termWrapper {
+    text-align: center;
+}
+
+.term,
+.objectives,
+.compentencies {
     display: inline-block;
-    color: blueviolet;
+    text-align: left;
 }
 
-h2+ol li {
+h2 {
+    font-size: 1.6em;
+    line-height: 1.2;
+    margin: 0.6em 0;
+}
+
+.descriptionText {
+    margin: auto 0;
+    text-indent: 0.5in;
+}
+
+h3 {
+    font-size: 1em;
+    line-height: 1.1;
+    margin: 0.5em 0;
+    color: rgb(40, 90, 184);
+}
+
+.objectivesWrapper>h2 {
+    text-align: justify;
+}
+
+
+.objectives {
+    margin-left: 1em;
+}
+
+.objectives li {
     list-style: decimal;
+    line-height: 1.5;
 }
 
-ol {
-    font-family: 'Times New Roman', Times, serif;
-    list-style: upper-roman;
+.objectives li::marker {
+    color: rgb(40, 119, 184);
+    font-weight: 600;
 }
 
-li li {
+.compentencies ol {
+    margin-left: .5em;
     list-style: upper-alpha;
-
 }
+
+
 
 h4+ol li {
-    list-style-type: decimal;
+    list-style-type: number;
+    color: black;
+
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
 
 }
