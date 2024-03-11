@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 .headernav {
@@ -20,7 +21,7 @@ body {
     max-width: 85vw;
     margin: 0 auto;
     background-color: rgba(217, 234, 233, 0.7);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 h1,
@@ -54,7 +55,6 @@ header {
 .bookstore {
     font-size: 1.2em;
     line-height: 1.5;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(20, 53, 53);
     font-weight: 600;
     text-decoration: none;
@@ -120,7 +120,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 1.1;
     margin: 0.5em 0;
     color: rgb(40, 90, 184);
@@ -132,12 +132,14 @@ h3 {
 
 
 .objectives {
-    margin-left: 1em;
+    margin-left: 0.5em;
 }
 
 .objectives li {
     list-style: decimal;
     line-height: 1.5;
+    list-style-position: inside;
+    margin: 0.3em 0;
 }
 
 .objectives li::marker {
@@ -145,21 +147,96 @@ h3 {
     font-weight: 600;
 }
 
-.compentencies ol {
+.compentencies>ol {
     margin-left: .5em;
+    list-style: upper-roman;
+}
+
+.compentencies {
+    border-top: 0.1em solid rgb(40, 119, 184);
+    border-bottom: 0.1em solid rgb(40, 119, 184);
+}
+
+.compentencies ol li {
+    margin: 0.3em 0;
+    line-height: 1.5;
+    list-style-position: inside;
+}
+
+.outlineHeaders {
+    display: inline;
+    font-size: 1em;
+    line-height: 1.2;
+}
+
+.compentencies li::marker {
+    color: rgb(40, 90, 184);
+    font-weight: 700;
+}
+
+
+.innerList {
+    margin-left: 1em;
     list-style: upper-alpha;
+}
+
+.innerList li::marker {
+    color: rgb(20, 53, 53);
+    font-weight: normal;
+}
+
+.createLinks {
+    display: inline;
+    font-size: 1.1em;
+    font-weight: 450;
+    color: rgb(20, 53, 53);
+}
+
+.createLinksOl {
+    list-style: decimal;
+    margin-left: 1em;
+}
+
+.tablesWrapper {
+    margin: 2em 0;
+
+}
+
+table {
+    text-align: justify;
+    min-width: 14em;
+    border-collapse: collapse;
+    display: inline-block;
+    margin: auto 5%;
+
+}
+
+th {
+    color: rgb(40, 90, 184);
+}
+
+th,
+td {
+    border: 1px solid rgb(160 160 160);
+    padding: 0.5em;
 }
 
 
 
-h4+ol li {
-    list-style-type: number;
-    color: black;
+table caption {
+    text-align: justify;
+    padding: 0.5em 0;
+    font-size: 1.2em;
+    color: rgb(40, 119, 184);
+    font-weight: 600;
 
+}
+
+.secondTable {
+    text-align: center;
 }
 
 footer {
     text-align: center;
     padding: 1em;
-
 }
