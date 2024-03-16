@@ -14,7 +14,7 @@
     height: auto;
     display: block;
     text-align: center;
-    background: rgb(147, 221, 216);
+    background-color: rgb(147, 221, 216);
     padding: 1em;
 }
 
@@ -23,6 +23,11 @@ body {
     margin: 0 auto;
     background-color: rgba(217, 234, 233, 0.7);
 
+}
+
+section {
+    padding: 0.5em;
+    margin: 1em auto;
 }
 
 h1,
@@ -54,16 +59,17 @@ header {
 }
 
 .liNav a,
-.bookstore {
+.bookstore,
+.keepUl a {
     font-size: 1.2em;
     line-height: 1.5;
     color: rgb(20, 53, 53);
     font-weight: 500;
     text-decoration: none;
     background:
-        linear-gradient(to right, rgba(100, 200, 200, 1), rgba(100, 200, 200, 1)),
+        linear-gradient(to right, rgb(26, 44, 44), rgb(26, 44, 44)),
         linear-gradient(to right, rgb(36, 78, 43), rgb(255, 0, 0), rgb(236, 233, 21));
-    background-size: 100% 0.1em, 0 0.1em;
+    background-size: 100% 0.05em, 0 0.05em;
     background-position: 100% 100%, 0 100%;
     background-repeat: no-repeat;
     transition: background-size 400ms;
@@ -71,8 +77,9 @@ header {
 }
 
 .liNav a:hover,
-.bookstore:hover {
-    background-size: 0 0.1em, 100% 0.1em;
+.bookstore:hover,
+.keepUl a:hover {
+    background-size: 0 0.08em, 100% 0.08em;
     color: rgb(45, 94, 94);
 }
 
@@ -92,14 +99,7 @@ li {
     color: rgb(20, 53, 53);
 }
 
-.courseIntroP {
-    max-width: 80%;
-    justify-content: center;
-    text-align: center;
-    color: rgb(20, 53, 53);
-    margin: 1em auto;
-    text-align: justify;
-}
+
 
 .termWrapper {
     text-align: center;
@@ -115,7 +115,7 @@ li {
 h2 {
     font-size: 1.6em;
     line-height: 1.2;
-    margin: 0.6em 0;
+    margin: 0.5em 0 0.5em 0;
 }
 
 .descriptionText {
@@ -126,7 +126,7 @@ h2 {
 h3 {
     font-size: 1.2em;
     line-height: 1.1;
-    margin: 0.5em 0;
+    margin: 1.5em 0;
     color: rgb(40, 90, 184);
 }
 
@@ -245,13 +245,13 @@ footer {
 
 footer p {
     font-size: 0.9em;
+    font-weight: 500;
 }
 
 .introWrapper,
 .skills {
     text-align: center;
     width: 100%;
-
 }
 
 .introP {
@@ -259,7 +259,8 @@ footer p {
 }
 
 .introP,
-.skillsP {
+.skillsP,
+.courseIntroP {
     max-width: 50em;
     line-height: 1.5;
     text-align: justify;
@@ -268,9 +269,9 @@ footer p {
 }
 
 .experience {
-    padding: 2em auto;
     text-align: center;
-    margin-top: 5em;
+    background-color: rgba(119, 182, 178, 0.4);
+
 }
 
 .experienceWrapper {
@@ -298,8 +299,9 @@ footer p {
 
 
 .skillULImgWrapper {
+    padding-top: 1em;
     display: inline-block;
-    margin: 3em auto;
+    margin: auto;
 }
 
 .skillsUl {
@@ -308,6 +310,7 @@ footer p {
     line-height: 2;
     text-align: center;
     list-style: square;
+    vertical-align: top;
 }
 
 .skillsUl li {
@@ -320,4 +323,57 @@ footer p {
     background-image: url(../images/index.jpg);
     background-size: cover;
     display: inline-block;
+}
+
+.emailBg,
+.curriculumBg,
+.linkedinBg,
+.gitHubBg {
+    height: 1.5em;
+    width: 1.5em;
+    background-size: cover;
+    display: inline-block;
+    margin: 0 0.5em;
+    vertical-align: middle;
+}
+
+.keepIntouch {
+    text-align: center;
+    background-color: rgb(147, 221, 216);
+}
+
+.keepUl li {
+    padding: 0.5em;
+}
+
+.keepUl a {
+    line-height: 2;
+}
+
+.liEmail {
+    display: block;
+}
+
+.liEmail~li {
+    display: inline-block;
+
+}
+
+.emailBg {
+    background-image: url(../images/icons8-mail-50.png);
+}
+
+.curriculumBg {
+    background-image: url(../images/icons8-curriculum-24.png);
+
+}
+
+.gitHubBg {
+    background-image: url(../images/icons8-github-50.png);
+
+}
+
+.linkedinBg {
+    background-image: url(../images/icons8-linkedin-50.png);
+
 }
