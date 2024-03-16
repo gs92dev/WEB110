@@ -40,6 +40,7 @@ h1 {
     line-height: 1.2;
     margin: auto;
     padding: 0.5em 0;
+    text-shadow: 0.1em 0.1em 0.5em rgba(15, 79, 79, 0.6);
 }
 
 header {
@@ -48,9 +49,7 @@ header {
 }
 
 .ulNav {
-
     list-style: none;
-
 }
 
 .liNav {
@@ -60,11 +59,13 @@ header {
 
 .liNav a,
 .bookstore,
-.keepUl a {
+.keepUl a,
+.jcccLinks,
+.projectLinks {
     font-size: 1.2em;
     line-height: 1.5;
     color: rgb(20, 53, 53);
-    font-weight: 500;
+    font-weight: 400;
     text-decoration: none;
     background:
         linear-gradient(to right, rgb(26, 44, 44), rgb(26, 44, 44)),
@@ -78,7 +79,9 @@ header {
 
 .liNav a:hover,
 .bookstore:hover,
-.keepUl a:hover {
+.keepUl a:hover,
+.jcccLinks:hover,
+.projectLinks:hover {
     background-size: 0 0.08em, 100% 0.08em;
     color: rgb(45, 94, 94);
 }
@@ -99,44 +102,75 @@ li {
     color: rgb(20, 53, 53);
 }
 
+.courseImg {
+    text-align: center;
+    margin: 1em auto;
+    background-image: url(../images/Untitled\ design.jpg);
+    background-size: 100% 100%;
+    width: 100%;
+    max-width: 50em;
+    height: 20em;
+    background-repeat: no-repeat;
+}
 
-
-.termWrapper {
+.CourseTopContent {
     text-align: center;
 }
 
-.term,
-.objectives,
+.courseIntroP {
+    margin: 1em auto;
+}
+
+
+.supplies {
+    text-align: justify;
+    margin: auto;
+    max-width: 50em;
+    padding: 0.5em 0;
+}
+
+.suppliesH3 {
+    padding-top: 0.5em;
+}
+
+.termWrapper {
+    justify-content: center;
+}
+
+.term li {
+    list-style-position: inside;
+}
+
+.objectivesWrapper,
 .compentencies {
-    display: inline-block;
-    text-align: left;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50em;
+    text-align: justify;
+}
+
+.objectivesWrapper {
+    text-align: center;
 }
 
 h2 {
     font-size: 1.6em;
     line-height: 1.2;
     margin: 0.5em 0 0.5em 0;
+    text-align: center;
 }
 
-.descriptionText {
-    margin: auto 0;
-    text-indent: 0.5in;
-}
+
 
 h3 {
     font-size: 1.2em;
     line-height: 1.1;
-    margin: 1.5em 0;
     color: rgb(40, 90, 184);
 }
 
-.objectivesWrapper>h2 {
-    text-align: justify;
-}
-
-
 .objectives {
-    margin-left: 0.5em;
+    text-align: justify;
 }
 
 .objectives li {
@@ -159,6 +193,7 @@ h3 {
 .compentencies {
     border-top: 0.1em solid rgb(40, 119, 184);
     border-bottom: 0.1em solid rgb(40, 119, 184);
+    background-color: rgba(119, 182, 178, 0.4);
 }
 
 .compentencies ol li {
@@ -202,7 +237,7 @@ h3 {
 }
 
 .tablesWrapper {
-    margin: 2em 0;
+    text-align: center;
 
 }
 
@@ -258,14 +293,21 @@ footer p {
     font-weight: 450;
 }
 
+.description {
+    background-color: rgba(119, 182, 178, 0.4);
+    max-width: 50em;
+}
+
 .introP,
 .skillsP,
-.courseIntroP {
+.courseIntroP,
+.descriptionText {
     max-width: 50em;
     line-height: 1.5;
     text-align: justify;
     display: block;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .experience {
@@ -376,4 +418,63 @@ footer p {
 .linkedinBg {
     background-image: url(../images/icons8-linkedin-50.png);
 
+}
+
+.moreInformation {
+    background-color: rgb(147, 221, 216);
+}
+
+.porfolioIntro {
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.porfolioIntro div {
+    display: inline-block;
+    background-image: url(../images/portfolio-header.jpg);
+    width: 15em;
+    height: 15em;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.porfolioIntro p {
+    height: 100%;
+    margin: auto 1em;
+    display: inline-block;
+    max-width: 35em;
+    text-align: justify;
+    vertical-align: top;
+}
+
+.projects {
+    text-align: center;
+}
+
+.faceTogetherImg {
+    background-image: url(../images/faceTogether.png);
+}
+
+.rpgImg {
+    background-image: url(../images/rpg.png);
+}
+
+.frutaImg {
+    background-image: url(../images/fruta.png);
+}
+
+.faceTogetherImg,
+.rpgImg {
+    max-width: 60em;
+    height: 25em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 1em auto;
+}
+
+.projectDescription {
+    margin: auto;
+    text-align: justify;
+    max-width: 60em;
 }
