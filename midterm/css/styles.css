@@ -10,11 +10,12 @@
 
 .headernav {
     width: 100%;
-    margin: 0 auto;
+    margin: 0;
     height: auto;
     display: block;
     text-align: center;
-
+    background: rgb(147, 221, 216);
+    padding: 1em;
 }
 
 body {
@@ -26,13 +27,14 @@ body {
 
 h1,
 h2 {
-    color: rgb(40, 119, 184);
+    color: rgb(20, 53, 53);
 }
 
 h1 {
     font-size: 2.3em;
     line-height: 1.2;
-    margin: 0.8rem 0;
+    margin: auto;
+    padding: 0.5em 0;
 }
 
 header {
@@ -41,7 +43,7 @@ header {
 }
 
 .ulNav {
-    margin: 1.5rem 0rem;
+
     list-style: none;
 
 }
@@ -56,7 +58,7 @@ header {
     font-size: 1.2em;
     line-height: 1.5;
     color: rgb(20, 53, 53);
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: none;
     background:
         linear-gradient(to right, rgba(100, 200, 200, 1), rgba(100, 200, 200, 1)),
@@ -71,14 +73,16 @@ header {
 .liNav a:hover,
 .bookstore:hover {
     background-size: 0 0.1em, 100% 0.1em;
+    color: rgb(45, 94, 94);
 }
 
-.liNav a:focus,
-.bookstore:focus {
+.liNav a:focus-visible,
+.bookstore:focus-visible {
     background-size: 0 0.1em, 100% 0.1em;
     outline-color: rgb(15, 79, 79);
     outline-offset: 0.1em;
     outline-style: dashed;
+
 }
 
 p,
@@ -212,7 +216,7 @@ table {
 }
 
 th {
-    color: rgb(40, 90, 184);
+    color: rgb(40, 119, 184);
 }
 
 th,
@@ -221,22 +225,99 @@ td {
     padding: 0.5em;
 }
 
-
-
 table caption {
     text-align: justify;
     padding: 0.5em 0;
     font-size: 1.2em;
-    color: rgb(40, 119, 184);
+    color: rgb(40, 90, 184);
     font-weight: 600;
-
 }
 
 .secondTable {
     text-align: center;
 }
 
+
 footer {
     text-align: center;
     padding: 1em;
+}
+
+footer p {
+    font-size: 0.9em;
+}
+
+.introWrapper,
+.skills {
+    text-align: center;
+    width: 100%;
+
+}
+
+.introP {
+    font-weight: 450;
+}
+
+.introP,
+.skillsP {
+    max-width: 50em;
+    line-height: 1.5;
+    text-align: justify;
+    display: block;
+    margin: auto;
+}
+
+.experience {
+    padding: 2em auto;
+    text-align: center;
+    margin-top: 5em;
+}
+
+.experienceWrapper {
+    display: inline-block;
+}
+
+.experienceUl {
+    display: inline-block;
+    padding: 2em;
+    margin: 1em;
+    text-align: center;
+    border-left: 1px solid rgb(40, 90, 184);
+    border-right: 1px solid rgb(40, 90, 184);
+}
+
+
+.experienceUl li,
+.skillsUl li {
+    border-bottom: 1px solid rgb(20, 90, 200);
+    list-style: square;
+    width: 10em;
+    line-height: 1.5;
+    margin: 0.5em auto;
+}
+
+
+.skillULImgWrapper {
+    display: inline-block;
+    margin: 3em auto;
+}
+
+.skillsUl {
+    display: inline-block;
+    padding: 0 3em;
+    line-height: 2;
+    text-align: center;
+    list-style: square;
+}
+
+.skillsUl li {
+    border: none;
+}
+
+.indexImg {
+    width: 17em;
+    height: 17em;
+    background-image: url(../images/index.jpg);
+    background-size: cover;
+    display: inline-block;
 }
