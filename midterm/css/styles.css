@@ -1,4 +1,4 @@
-/* Guilherme dos Santos  */
+/* Guilherme dos Santos 03/16/2024 */
 * {
     box-sizing: border-box;
     font-size: 16px;
@@ -8,6 +8,7 @@
 
 }
 
+/* ------------ Shared styles for all pages ------------ */
 .headernav {
     width: 100%;
     margin: 0;
@@ -57,6 +58,21 @@ header {
     margin: auto 5%;
 }
 
+h2 {
+    font-size: 1.6em;
+    line-height: 1.2;
+    margin: 0.5em 0 0.5em 0;
+    text-align: center;
+}
+
+
+
+h3 {
+    font-size: 1.3em;
+    line-height: 1.1;
+    color: rgb(40, 90, 184);
+}
+
 .liNav a,
 .bookstore,
 .keepUl a,
@@ -86,13 +102,25 @@ header {
     color: rgb(45, 94, 94);
 }
 
-.liNav a:focus-visible,
-.bookstore:focus-visible {
+
+a:focus-visible {
     background-size: 0 0.1em, 100% 0.1em;
     outline-color: rgb(15, 79, 79);
     outline-offset: 0.1em;
     outline-style: dashed;
 
+}
+
+.introP,
+.skillsP,
+.courseIntroP,
+.descriptionText {
+    max-width: 50em;
+    line-height: 1.5;
+    text-align: justify;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 p,
@@ -102,15 +130,214 @@ li {
     color: rgb(20, 53, 53);
 }
 
+footer {
+    text-align: center;
+    padding: 1em;
+}
+
+footer p {
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+/* ------------ Index page ------------ */
+.experience {
+    text-align: center;
+    background-color: rgba(119, 182, 178, 0.4);
+
+}
+
+.experienceWrapper {
+    display: inline-block;
+}
+
+.experienceUl {
+    display: inline-block;
+    padding: 2em;
+    margin: 1em;
+    text-align: center;
+    border-left: 1px solid rgb(40, 90, 184);
+    border-right: 1px solid rgb(40, 90, 184);
+}
+
+
+.experienceUl li,
+.skillsUl li {
+    border-bottom: 1px solid rgb(20, 90, 200);
+    list-style: square;
+    width: 10em;
+    line-height: 1.5;
+    margin: 0.5em auto;
+}
+
+
+.skillULImgWrapper {
+    padding-top: 1em;
+    display: inline-block;
+    margin: auto;
+}
+
+.skillsUl {
+    display: inline-block;
+    padding: 0 3em;
+    line-height: 2;
+    text-align: center;
+    list-style: square;
+    vertical-align: top;
+}
+
+.skillsUl li {
+    border: none;
+}
+
+.indexImg {
+    width: 17em;
+    height: 17em;
+    background-image: url(../images/index.jpg);
+    background-size: cover;
+    display: inline-block;
+    box-shadow: 0.3em 0.3em 0.3em rgba(35, 82, 79, 0.3);
+}
+
+.emailBg,
+.curriculumBg,
+.linkedinBg,
+.gitHubBg {
+    height: 1.5em;
+    width: 1.5em;
+    background-size: cover;
+    display: inline-block;
+    margin: 0 0.5em;
+    vertical-align: middle;
+}
+
+.keepIntouch {
+    text-align: center;
+    background-color: rgb(147, 221, 216);
+}
+
+.keepUl li {
+    padding: 0.5em;
+}
+
+.keepUl a {
+    line-height: 2;
+}
+
+.liEmail {
+    display: block;
+}
+
+.liEmail~li {
+    display: inline-block;
+
+}
+
+.emailBg {
+    background-image: url(../images/icons8-mail-50.png);
+}
+
+.curriculumBg {
+    background-image: url(../images/curriculumImg.png);
+
+}
+
+.gitHubBg {
+    background-image: url(../images/githubimg.png);
+
+}
+
+.linkedinBg {
+    background-image: url(../images/linkedinimg.png);
+
+}
+
+.moreInformation {
+    background-color: rgb(147, 221, 216);
+}
+
+/* ------------ Portifolio page ------------ */
+.porfolioIntro {
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.porfolioIntro div {
+    display: inline-block;
+    background-image: url(../images/portfolio-header.jpg);
+    width: 15em;
+    height: 15em;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.porfolioIntro p {
+    height: 100%;
+    margin: auto 1em;
+    display: inline-block;
+    max-width: 35em;
+    text-align: justify;
+    vertical-align: top;
+}
+
+.projects {
+    text-align: center;
+}
+
+.faceTogetherImg {
+    background-image: url(../images/faceTogether.png);
+}
+
+.rpgImg {
+    background-image: url(../images/rpg.png);
+}
+
+.frutaImg {
+    background-image: url(../images/fruta.png);
+}
+
+.apperiaImg {
+    background-image: url(../images/apeperia.png);
+}
+
+.faceTogetherImg,
+.rpgImg,
+.frutaImg,
+.apperiaImg {
+    max-width: 60em;
+    height: 25em;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 1em auto;
+    box-shadow: 0.3em 0.3em 0.3em rgba(35, 82, 79, 0.3);
+    transition: box-shadow 1s ease-in;
+}
+
+.faceTogetherImg:hover,
+.rpgImg:hover,
+.frutaImg:hover,
+.apperiaImg:hover {
+    box-shadow: 0.2em 0.2em 0.3em rgba(35, 82, 79, 0.2);
+}
+
+.projectDescription {
+    margin: auto;
+    text-align: justify;
+    max-width: 60em;
+}
+
+/* ------------ Course Web 110 page ------------ */
 .courseImg {
     text-align: center;
     margin: 1em auto;
-    background-image: url(../images/Untitled\ design.jpg);
+    background-image: url(../images/courseImg.jpg);
     background-size: 100% 100%;
     width: 100%;
     max-width: 50em;
     height: 20em;
     background-repeat: no-repeat;
+    box-shadow: 0.3em 0.3em 0.3em rgba(35, 82, 79, 0.3);
 }
 
 .CourseTopContent {
@@ -126,7 +353,7 @@ li {
     text-align: justify;
     margin: auto;
     max-width: 50em;
-    padding: 0.5em 0;
+    padding-top: 0.5em;
 }
 
 .suppliesH3 {
@@ -152,21 +379,7 @@ li {
 
 .objectivesWrapper {
     text-align: center;
-}
-
-h2 {
-    font-size: 1.6em;
-    line-height: 1.2;
-    margin: 0.5em 0 0.5em 0;
-    text-align: center;
-}
-
-
-
-h3 {
-    font-size: 1.2em;
-    line-height: 1.1;
-    color: rgb(40, 90, 184);
+    padding-top: 0;
 }
 
 .objectives {
@@ -272,17 +485,6 @@ table caption {
     text-align: center;
 }
 
-
-footer {
-    text-align: center;
-    padding: 1em;
-}
-
-footer p {
-    font-size: 0.9em;
-    font-weight: 500;
-}
-
 .introWrapper,
 .skills {
     text-align: center;
@@ -296,185 +498,4 @@ footer p {
 .description {
     background-color: rgba(119, 182, 178, 0.4);
     max-width: 50em;
-}
-
-.introP,
-.skillsP,
-.courseIntroP,
-.descriptionText {
-    max-width: 50em;
-    line-height: 1.5;
-    text-align: justify;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.experience {
-    text-align: center;
-    background-color: rgba(119, 182, 178, 0.4);
-
-}
-
-.experienceWrapper {
-    display: inline-block;
-}
-
-.experienceUl {
-    display: inline-block;
-    padding: 2em;
-    margin: 1em;
-    text-align: center;
-    border-left: 1px solid rgb(40, 90, 184);
-    border-right: 1px solid rgb(40, 90, 184);
-}
-
-
-.experienceUl li,
-.skillsUl li {
-    border-bottom: 1px solid rgb(20, 90, 200);
-    list-style: square;
-    width: 10em;
-    line-height: 1.5;
-    margin: 0.5em auto;
-}
-
-
-.skillULImgWrapper {
-    padding-top: 1em;
-    display: inline-block;
-    margin: auto;
-}
-
-.skillsUl {
-    display: inline-block;
-    padding: 0 3em;
-    line-height: 2;
-    text-align: center;
-    list-style: square;
-    vertical-align: top;
-}
-
-.skillsUl li {
-    border: none;
-}
-
-.indexImg {
-    width: 17em;
-    height: 17em;
-    background-image: url(../images/index.jpg);
-    background-size: cover;
-    display: inline-block;
-}
-
-.emailBg,
-.curriculumBg,
-.linkedinBg,
-.gitHubBg {
-    height: 1.5em;
-    width: 1.5em;
-    background-size: cover;
-    display: inline-block;
-    margin: 0 0.5em;
-    vertical-align: middle;
-}
-
-.keepIntouch {
-    text-align: center;
-    background-color: rgb(147, 221, 216);
-}
-
-.keepUl li {
-    padding: 0.5em;
-}
-
-.keepUl a {
-    line-height: 2;
-}
-
-.liEmail {
-    display: block;
-}
-
-.liEmail~li {
-    display: inline-block;
-
-}
-
-.emailBg {
-    background-image: url(../images/icons8-mail-50.png);
-}
-
-.curriculumBg {
-    background-image: url(../images/icons8-curriculum-24.png);
-
-}
-
-.gitHubBg {
-    background-image: url(../images/icons8-github-50.png);
-
-}
-
-.linkedinBg {
-    background-image: url(../images/icons8-linkedin-50.png);
-
-}
-
-.moreInformation {
-    background-color: rgb(147, 221, 216);
-}
-
-.porfolioIntro {
-    text-align: center;
-    vertical-align: middle;
-    width: 100%;
-}
-
-.porfolioIntro div {
-    display: inline-block;
-    background-image: url(../images/portfolio-header.jpg);
-    width: 15em;
-    height: 15em;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.porfolioIntro p {
-    height: 100%;
-    margin: auto 1em;
-    display: inline-block;
-    max-width: 35em;
-    text-align: justify;
-    vertical-align: top;
-}
-
-.projects {
-    text-align: center;
-}
-
-.faceTogetherImg {
-    background-image: url(../images/faceTogether.png);
-}
-
-.rpgImg {
-    background-image: url(../images/rpg.png);
-}
-
-.frutaImg {
-    background-image: url(../images/fruta.png);
-}
-
-.faceTogetherImg,
-.rpgImg {
-    max-width: 60em;
-    height: 25em;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 1em auto;
-}
-
-.projectDescription {
-    margin: auto;
-    text-align: justify;
-    max-width: 60em;
 }
