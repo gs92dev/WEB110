@@ -4,14 +4,8 @@
 }
 
 #wrapper {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
     background-color: #FFFFFF;
-    min-width: 960px;
-    max-width: 2048px;
-    box-shadow: 3px 3px #333333;
-    border: 1px solid #000033;
+
 }
 
 #homehero {
@@ -36,31 +30,25 @@
 }
 
 body {
-    background-color: #0194b5;
-    background-image: linear-gradient(#FFFFFF, #0194b5);
-    background-repeat: no-repeat;
+    background-color: #EAEAEA;
     color: #555555;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
-    background-color: #29485d;
-    background-image: url(../img/logo.png);
-    background-position: right;
-    background-repeat: no-repeat;
+    background-color: #FFFFFF;
     color: #FFFFFF;
     height: 60px;
-    text-align: left;
-    padding-top: 30px;
-    height: 120px;
-
+    text-align: center;
+    padding: 0.5em 0;
+    letter-spacing: 0.25em;
 }
 
 nav {
     background-color: #FFFFFF;
     font-weight: bold;
     text-align: center;
-    padding: 1.5em;
+    padding: 0;
     font-size: 120%;
 
 }
@@ -73,10 +61,6 @@ h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-bottom: 0;
     margin-top: 0;
-    font-size: 2em;
-    letter-spacing: 0.2em;
-    margin-right: 35%;
-    margin-left: 3em;
 }
 
 main {
@@ -113,6 +97,7 @@ footer {
     font-style: italic;
     text-align: center;
     padding: 2em;
+    background-color: #FFFFFF;
 
 }
 
@@ -129,22 +114,17 @@ dt {
     font-size: 90%;
 }
 
-section {
-    float: left;
-    width: 25%;
-    padding-left: 2em;
-    padding-right: 2em;
-}
+
 
 nav ul {
     list-style: none;
     margin: 0;
     font-size: 1.2em;
+    padding-left: 0;
 }
 
 nav ul li {
-    display: inline;
-    padding: 1em;
+    border-bottom: 1px solid #29485d;
 }
 
 nav ul li a:link {
@@ -167,4 +147,46 @@ header a:visited {
 
 header a:hover {
     color: #c6d02f;
+}
+
+@media only screen and (min-width: 800px) {
+    body {
+        background-color: #0194b5;
+        background-image: linear-gradient(#FFFFFF, #0194b5);
+        background-repeat: no-repeat;
+    }
+
+    header {
+        background-color: #29485d;
+        background-image: url(../img/logo.png);
+        background-position: right;
+        background-repeat: no-repeat;
+        color: #FFFFFF;
+        text-align: left;
+        padding-top: 30px;
+        height: 120px;
+
+    }
+
+    nav {
+        background-color: #FFFFFF;
+        padding: 1em;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+
+    }
+
+    nav ul li {
+        border-bottom: none;
+    }
+
+    section {
+        margin: 0 2em;
+        flex: 1;
+    }
+
 }
