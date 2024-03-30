@@ -1,4 +1,4 @@
-/* Guilherme dos Santos 19, March 2024 */
+/* Guilherme dos Santos 30, March 2024 */
 * {
     box-sizing: border-box;
 }
@@ -36,7 +36,7 @@ body {
 }
 
 header {
-    background-color: #FFFFFF;
+    background-color: #29485d;
     color: #FFFFFF;
     height: 60px;
     text-align: center;
@@ -50,71 +50,11 @@ nav {
     text-align: center;
     padding: 0;
     font-size: 120%;
-
 }
 
 nav a {
     text-decoration: none;
 }
-
-h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-bottom: 0;
-    margin-top: 0;
-}
-
-main {
-    display: block;
-    padding: 1px 20px 20px 20px;
-    overflow: auto;
-    background-color: white;
-}
-
-h2 {
-    color: #407386;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-shadow: 1px 1px #CCCCCC;
-    text-align: center;
-
-}
-
-h3 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #29485d;
-}
-
-main ul {
-    list-style: url(../img/marker.gif);
-}
-
-li {
-    line-height: 1.5;
-}
-
-footer {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 75%;
-    font-style: italic;
-    text-align: center;
-    padding: 2em;
-    background-color: #FFFFFF;
-
-}
-
-dt {
-    color: #0194B5;
-}
-
-.web {
-    color: #0194B5;
-    font-weight: bold;
-}
-
-#contact {
-    font-size: 90%;
-}
-
-
 
 nav ul {
     list-style: none;
@@ -139,6 +79,66 @@ nav ul li a:hover {
     color: #c6d02f;
 }
 
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 1em;
+}
+
+h1 a {
+    text-decoration: none;
+}
+
+main {
+    display: block;
+    padding: 1px 20px 20px 20px;
+    overflow: auto;
+    background-color: white;
+}
+
+h2 {
+    color: #407386;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 1px 1px #CCCCCC;
+    text-align: center;
+}
+
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #29485d;
+}
+
+main ul {
+    list-style: url(../img/marker.gif);
+}
+
+
+li {
+    line-height: 1.5;
+}
+
+footer {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 75%;
+    font-style: italic;
+    text-align: center;
+    padding: 2em;
+    background-color: #FFFFFF;
+}
+
+dt {
+    color: #0194B5;
+}
+
+.web {
+    color: #0194B5;
+    font-weight: bold;
+}
+
+#contact {
+    font-size: 90%;
+}
 
 header a:link,
 header a:visited {
@@ -149,7 +149,7 @@ header a:hover {
     color: #c6d02f;
 }
 
-@media only screen and (min-width: 800px) {
+@media screen and (min-width: 800px) {
     body {
         background-color: #0194b5;
         background-image: linear-gradient(#FFFFFF, #0194b5);
@@ -189,4 +189,32 @@ header a:hover {
         flex: 1;
     }
 
+    .flow {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1250px) {
+    #wrapper {
+        margin: auto;
+        width: 80%;
+        border: 1px solid #000033;
+        box-shadow: 3px 3px #333333;
+    }
+
+    header {
+        background-image: url(../img/logo.png);
+        background-position: right;
+        background-repeat: no-repeat;
+        color: #FFFFFF;
+        text-align: left;
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 2em;
+        letter-spacing: 0.2em;
+        margin: 0 35% 0 3em;
+    }
 }
