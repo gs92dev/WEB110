@@ -158,10 +158,13 @@ td, th {
     padding: 0.5em;
     text-align: left;
 }
+th{
+    text-align: center;
+}
 td{
     text-align: center;    
 }
-#text {
+.text {
     text-align: left;
 }
 tr:nth-child(odd) {
