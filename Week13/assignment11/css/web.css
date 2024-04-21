@@ -54,6 +54,7 @@ nav {
 
 nav a {
     text-decoration: none;
+    transition: color 3s ease-in-out;
 }
 
 nav ul {
@@ -180,6 +181,10 @@ form{
     }
     input,select{
         margin-bottom: 0.5em;
+    }
+    iframe{
+        margin: 1em;
+        float: right;
     }
 @media screen and (min-width: 800px) {
     body {
