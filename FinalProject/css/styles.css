@@ -7,14 +7,16 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 body{
-    background-color:  #DAC0A3;
+    background-color:#EADBC8;
 }
 .wrapper{
-    background-color: #EADBC8;
+    background-color:#FEFAF6;
     color: #102C57;
     width: 95%;
     justify-content: center;
     margin: auto;
+    max-width: 100em;
+
 }
 .headerNavigation{
     display: flex;
@@ -32,7 +34,8 @@ h1{
 }
 h2{
     font-size: 1.5em;
-    padding: 0.5em
+    padding: 0.5em;
+    color: #102A9F;
 }
 nav>ul{
     display: flex;
@@ -56,14 +59,23 @@ nav>ul>li>a:hover{
     color: #DAC0A3;
 }
 main{
-    width: 100%;
+    max-width: 95%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
 
 }
-.introduction{
+/* Include on CSS 3 */
+/* targets p inside the last article child */
+main:last-child p {
+    margin-bottom: 0em;
+}
+.home-articles{
     display: flex;
     flex-direction: column;
 }
+
 p{
     font-size: 1.2em;
     margin: 1em auto;
@@ -71,8 +83,9 @@ p{
     text-align: justify;    
     line-height: 1.3;
     text-indent: 0.5in;
+    color:#102C57;
 }
-.introduction>figure{
+article>figure{
     height: 30em;
     max-width: 100%;
     margin: auto;
@@ -81,11 +94,18 @@ p{
     gap: 1em;
     justify-content: center;
 }
-.introduction>figure>img{
+article>figure>img{
     width: 100%;
     height: 80%;
 }
 
+.history-articles{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
 /* colors for the project #FEFAF6, #EADBC8, #DAC0A3, 102C57*/
 
 /* web-110 */
@@ -268,6 +288,24 @@ table caption {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Media queries */
+@media screen and (min-width: 800px) {
+    .history-articles{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+        justify-content: center;
+        align-items: center;
+    }
+   
+}
+
+@media screen and (min-width: 1250px) {
+    .main {
+        gap: 2em;
+    }
 }
 
 

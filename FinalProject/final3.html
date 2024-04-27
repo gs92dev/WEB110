@@ -3,7 +3,129 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>form</title>
   </head>
-  <body></body>
+  <body>
+    <section class="headerNavigation">
+      <header><h1>JavaScript - it's not Java!</h1></header>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./final2.html">JS and Java</a></li>
+          <li><a href="./final3.html">Form</a></li>
+          <li><a href="./final4.html">Contact</a></li>
+          <li><a href="./final5.html">Web-110</a></li>
+        </ul>
+      </nav>
+    </section>
+    <div class="wrapper">
+      <main>
+        <article class="introduction">
+          <p>
+            The World Wide Web offers innumerable possibilities, both for the
+            end user and for the people who develop it. On the development side,
+            it's always necessary to stay updated and follow the new trends.
+            Today, we have various languages and frameworks to work with, and
+            keeping learning and improving is the key to success. There are
+            several sources of information and courses to help you improve your
+            skills. One of them is the Web-110 course, which offers a great
+            opportunity to learn and improve skills in web development. Some
+            sources are also available for free on the internet itself; blogs,
+            YouTube channels, and forums are some examples of sources that can
+            help you improve your skills. The most important thing is to keep
+            learning and improving because the web development world is always
+            changing, and we need to keep up with it. AI brings a lot of new
+            possibilities too. If you desire to learn more about it, curiosity
+            is the key.
+          </p>
+          <p>Some good fonts for learning are:</p>
+          <ul class="fonts">
+            <li>W3Schools</li>
+            <li>MDN Web Docs</li>
+            <li>Codecademy</li>
+            <li>freeCodeCamp</li>
+            <li>Udemy</li>
+            <li>React</li>
+            <li>Oracle JAVA</li>
+          </ul>
+        </article>
+        <section>
+          <h2>
+            If you want to know more about Web development you can subscribe our
+            newsletter!
+          </h2>
+          <form action="">
+            <div>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+              <label for="question">Question:</label>
+              <textarea id="question" name="question"></textarea>
+            </div>
+
+            <div>
+              <label for="topic">What language do you want to know more?</label>
+              <div>
+                <input type="checkbox" id="java" name="topic" value="java" />
+                <label for="java">Java</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="javascript"
+                  name="topic"
+                  value="javascript"
+                />
+                <label for="javascript">JavaScript</label>
+              </div>
+              <div>
+                <input type="checkbox" id="both" name="topic" value="both" />
+                <label for="both">Both</label>
+              </div>
+            </div>
+            <div>
+              <label for="topic"
+                >What topics do you want to know more about?</label
+              >
+              <div>
+                <input type="checkbox" id="java" name="topic" value="java" />
+                <label for="java">Java</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="javascript"
+                  name="topic"
+                  value="javascript"
+                />
+                <label for="javascript">JavaScript</label>
+              </div>
+              <div>
+                <input type="checkbox" id="both" name="topic" value="both" />
+                <label for="both">Both</label>
+              </div>
+            </div>
+
+            <input type="radio" name="acceptEmails" value="yes" required />
+            <label for="acceptEmails">Accept to receive emails</label>
+
+            <button type="submit">Submit</button>
+          </form>
+        </section>
+      </main>
+    </div>
+    <footer>
+      <section class="headerNavigation">
+        <nav>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./final2.html">JS and Java</a></li>
+            <li><a href="./final3.html">Form</a></li>
+            <li><a href="./final4.html">Contact</a></li>
+            <li><a href="./final5.html">Web-110</a></li>
+          </ul>
+        </nav>
+      </section>
+    </footer>
+  </body>
 </html>
