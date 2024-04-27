@@ -306,6 +306,23 @@ table caption {
     .main {
         gap: 2em;
     }
+
+    /* web 110 description */
+    .objectives{
+        display: flex;
+        gap: 5em;
+    }
+    .competencies-list{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 2em 2em;
+        justify-content: center;
+    }
+    .compentencies h2{
+        text-align: center;
+    }
+
 }
 
 

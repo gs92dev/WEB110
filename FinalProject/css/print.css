@@ -1,0 +1,33 @@
+@media print {
+    /* Add your CSS rules here for printing */
+    body {
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+    }
+    
+    /* Example rule: hide the header and footer */
+    .headerNavigation {
+        display: none;
+    }
+    section article figure{
+        display: none;
+    }
+    
+    /* Example rule: set the background color to white */
+    body {
+        background-color: white;
+    }
+    p,h1,h2,h3,h4,label,li, figcaption,a, td,th{
+        color: black;
+    }
+    .CourseTopContent{
+        display: none;
+    }
+    section{
+        margin: 0;
+    }
+    /* Example rule: adjust margins */
+    @page {
+        margin: 1cm;
+    }
+}
