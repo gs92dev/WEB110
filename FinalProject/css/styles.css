@@ -144,8 +144,8 @@ article>figure{
     justify-content: center;
 }
 article>figure>img{
-    width: 100%;
-    height: 80%;
+    max-width: 100%;
+    max-height: 80%;
 }
 
 .history-articles{
@@ -395,6 +395,13 @@ table caption {
     .form-intro-figure p{
         max-width: 80%;
     }
+    .second-p-history{
+        grid-column: 2/3;
+    }
+    .second-figure-history{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
    
 }
 
@@ -402,7 +409,6 @@ table caption {
     .main {
         gap: 2em;
     }
-
     /* web 110 description */
     .objectives{
         display: flex;
