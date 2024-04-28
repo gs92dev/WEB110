@@ -26,6 +26,9 @@
     section{
         margin: 0;
     }
+    .form-intro-figure figure{
+        display: none;
+    }
     /* Example rule: adjust margins */
     @page {
         margin: 1cm;

@@ -4,7 +4,126 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/print.css" />
     <title>form</title>
+    <style>
+      /* Styles for the form */
+      form {
+        background-color: #eadbc8;
+        border-radius: 0.2em;
+        border: #2a74be solid 3px;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        justify-content: left;
+        margin: 1em auto 2em auto;
+        max-width: 95%;
+        padding: 0.5em;
+      }
+      /* Apply flex col to a few elements */
+      .form-flex-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-items: flex-start;
+      }
+      label {
+        margin: 0.5em;
+        font-weight: 450;
+        font-size: 1.1em;
+        color: #102c57;
+      }
+      input[type="email"] {
+        width: 100%;
+        padding: 0.7em;
+        caret-color: #102c53;
+      }
+      input[type="email"]:focus-visible,
+      textarea:focus-visible {
+        outline: rgb(128, 180, 238) solid 1px;
+      }
+
+      textarea {
+        width: 100%;
+        padding: 0.5em;
+        height: 5em;
+        caret-color: #102c57;
+      }
+      /* Styled for email and textarea */
+      .input-styles {
+        border-radius: 0.2em;
+        border: #2a74be solid 2px;
+      }
+      .checkbox-styles {
+        height: 1em;
+        width: 1em;
+      }
+      /* styles for checkboxes  */
+      .form-theme,
+      .form-more {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .form-radio {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      button[type="submit"] {
+        padding: 0.25em;
+        justify-self: center;
+        align-self: center;
+        color: wheat;
+        background-color: #295ba5;
+        border-radius: 0.2em;
+        border: #2a74be solid 2px;
+        justify-self: center;
+        width: 40%;
+        transition: all 0.3s ease-in-out;
+      }
+      button[type="submit"]:hover {
+        background-color: #2a74be;
+        color: white;
+        cursor: pointer;
+      }
+      @media screen and (min-width: 800px) {
+        /* Styles to position the elements in the form on the grid */
+        form {
+          border-radius: 0.2em;
+          border: #2a74be solid 3px;
+          display: grid;
+          gap: 1em 1em;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: auto;
+          margin: 1em auto 2em auto;
+          max-width: 60em;
+          padding: 0.5em;
+          background-color: #eadbc8;
+        }
+        .form-textarea {
+          grid-column: 1 / 2;
+          grid-row: 2 / 2;
+        }
+        .form-email {
+          grid-column: 1 / 2;
+          grid-row: 1 / 2;
+        }
+        .checkbox-styles {
+          height: 1.3em;
+          width: 1.3em;
+        }
+        .form-radio {
+          grid-column: 1 / 2;
+          grid-row: 3 / 3;
+        }
+        button[type="submit"] {
+          grid-column: 2 / 3;
+          grid-row: 3 / 4;
+        }
+      }
+    </style>
   </head>
   <body>
     <section class="headerNavigation">
@@ -22,109 +141,189 @@
     <div class="wrapper">
       <main>
         <article class="introduction">
-          <p>
-            The World Wide Web offers innumerable possibilities, both for the
-            end user and for the people who develop it. On the development side,
-            it's always necessary to stay updated and follow the new trends.
-            Today, we have various languages and frameworks to work with, and
-            keeping learning and improving is the key to success. There are
-            several sources of information and courses to help you improve your
-            skills. One of them is the Web-110 course, which offers a great
-            opportunity to learn and improve skills in web development. Some
-            sources are also available for free on the internet itself; blogs,
-            YouTube channels, and forums are some examples of sources that can
-            help you improve your skills. The most important thing is to keep
-            learning and improving because the web development world is always
-            changing, and we need to keep up with it. AI brings a lot of new
-            possibilities too. If you desire to learn more about it, curiosity
-            is the key.
-          </p>
-          <p>Some good fonts for learning are:</p>
-          <ul class="fonts">
-            <li>W3Schools</li>
-            <li>MDN Web Docs</li>
-            <li>Codecademy</li>
-            <li>freeCodeCamp</li>
-            <li>Udemy</li>
-            <li>React</li>
-            <li>Oracle JAVA</li>
-          </ul>
+          <h2>Keep learning</h2>
+          <div class="form-intro-figure">
+            <p>
+              The World Wide Web offers innumerable possibilities, both for the
+              end user and for the people who develop it. On the development
+              side, it's always necessary to stay updated and follow the new
+              trends. Today, we have various languages and frameworks to work
+              with, and keeping learning and improving is the key to success.
+              There are several sources of information and courses to help you
+              improve your skills. One of them is the Web-110 course, which
+              offers a great opportunity to learn and improve skills in web
+              development. Some sources are also available for free on the
+              internet itself; blogs, YouTube channels, and forums are some
+              examples of sources that can help you improving. The most
+              important thing is to keep learning because the web development
+              world is always changing, and we need to keep up with it. AI
+              brings a lot of new possibilities too. If you desire to learn more
+              about it, curiosity is the key.
+            </p>
+            <figure>
+              <img
+                src="./images/form.jpg"
+                alt="Web development programming languages"
+              />
+              <figcaption>
+                Web development programming languages, Image
+                <a href="http://www.freepik.com"
+                  >Designed by stories / Freepik</a
+                >
+              </figcaption>
+            </figure>
+          </div>
+          <div class="font-learn">
+            <h3>Some good fonts for learning are:</h3>
+            <ul class="fonts">
+              <li>W3Schools</li>
+              <li>MDN Web Docs</li>
+              <li>Codecademy</li>
+              <li>freeCodeCamp</li>
+              <li>Udemy</li>
+              <li>React</li>
+              <li>Oracle JAVA</li>
+            </ul>
+          </div>
         </article>
         <section>
-          <h2>
-            If you want to know more about Web development you can subscribe our
-            newsletter!
-          </h2>
+          <h2>If you want to know more you can subscribe our newsletter!</h2>
           <form action="">
-            <div>
+            <div class="form-email form-flex-col">
               <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required />
+              <input
+                class="input-text input-styles"
+                type="email"
+                id="email"
+                name="email"
+                required
+              />
+            </div>
+            <div class="form-textarea form-flex-col">
               <label for="question">Question:</label>
-              <textarea id="question" name="question"></textarea>
+              <textarea
+                class="input-text input-styles"
+                id="question"
+                name="question"
+              ></textarea>
             </div>
 
-            <div>
+            <div class="form-more form-flex-col">
               <label for="topic">What language do you want to know more?</label>
               <div>
-                <input type="checkbox" id="java" name="topic" value="java" />
-                <label for="java">Java</label>
-              </div>
-              <div>
                 <input
+                  class="input-styles checkbox-styles"
+                  type="checkbox"
+                  id="java"
+                  name="topic"
+                  value="java"
+                />
+                <label for="java">Java</label>
+                <input
+                  class="input-styles checkbox-styles"
                   type="checkbox"
                   id="javascript"
                   name="topic"
                   value="javascript"
                 />
                 <label for="javascript">JavaScript</label>
-              </div>
-              <div>
-                <input type="checkbox" id="both" name="topic" value="both" />
+
+                <input
+                  class="input-styles checkbox-styles"
+                  type="checkbox"
+                  id="both"
+                  name="topic"
+                  value="both"
+                />
                 <label for="both">Both</label>
               </div>
             </div>
-            <div>
+            <div class="form-theme form-flex-col">
               <label for="topic"
                 >What topics do you want to know more about?</label
               >
               <div>
-                <input type="checkbox" id="java" name="topic" value="java" />
-                <label for="java">Java</label>
-              </div>
-              <div>
                 <input
+                  class="input-styles checkbox-styles"
+                  type="checkbox"
+                  id="java"
+                  name="topic"
+                  value="java"
+                />
+                <label for="java">Programming</label>
+
+                <input
+                  class="input-styles checkbox-styles"
                   type="checkbox"
                   id="javascript"
                   name="topic"
                   value="javascript"
                 />
-                <label for="javascript">JavaScript</label>
-              </div>
-              <div>
-                <input type="checkbox" id="both" name="topic" value="both" />
-                <label for="both">Both</label>
+                <label for="javascript">Frameworks</label>
+
+                <input
+                  class="input-styles checkbox-styles"
+                  type="checkbox"
+                  id="both"
+                  name="topic"
+                  value="both"
+                />
+                <label for="both">Use cases</label>
               </div>
             </div>
-
-            <input type="radio" name="acceptEmails" value="yes" required />
-            <label for="acceptEmails">Accept to receive emails</label>
-
+            <div class="form-radio">
+              <input
+                class="input-styles checkbox-styles"
+                type="radio"
+                name="acceptEmails"
+                value="yes"
+                required
+              />
+              <label for="acceptEmails">I accept to receive emails</label>
+            </div>
             <button type="submit">Submit</button>
           </form>
         </section>
       </main>
     </div>
-    <footer>
-      <section class="headerNavigation">
-        <nav>
-          <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./final2.html">JS and Java</a></li>
-            <li><a href="./final3.html">Form</a></li>
-            <li><a href="./final4.html">Contact</a></li>
-            <li><a href="./final5.html">Web-110</a></li>
-          </ul>
-        </nav>
+    <footer class="footerNavigation">
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./final2.html">JS and Java</a></li>
+          <li><a href="./final3.html">Form</a></li>
+          <li><a href="./final4.html">Contact</a></li>
+          <li><a href="./final5.html">Web-110</a></li>
+        </ul>
+      </nav>
+      <section>
+        <p class="p-footer">
+          Final project - Guilherme dos Santos, to know more about me you can
+          check my
+          <a target="_blank" href="./images/Guilherme_Santos_English.pdf"
+            >resume</a
+          >, social media or send me an email:
+        </p>
+        <ul class="keepUl">
+          <li class="liEmail">
+            <a href="mailto:gdossant@stumail.jccc.edu"
+              ><div class="emailBg"></div>
+              Institutional email: gdossant@stumail.jccc.edu</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/gs92dev" target="_blank">
+              <div class="gitHubBg"></div>
+              Github</a
+            >
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/gs-dev/" target="_blank"
+              ><div class="linkedinBg"></div>
+              LinkedIn</a
+            >
+          </li>
+        </ul>
       </section>
     </footer>
   </body>
