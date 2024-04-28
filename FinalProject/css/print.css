@@ -5,8 +5,7 @@
         font-size: 12px;
     }
     
-    /* Example rule: hide the header and footer */
-    .headerNavigation {
+    .headerNavigation, .footerNavigation {
         display: none;
     }
     section article figure{
