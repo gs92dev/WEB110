@@ -135,7 +135,7 @@ p{
 
 
 article>figure, .credits-img{
-    height: 30em;
+    max-height: 30em;
     max-width: 100%;
     margin: auto;
     display: flex;
@@ -145,7 +145,7 @@ article>figure, .credits-img{
 }
 article>figure>img, .credits-img>img{
     max-width: 100%;
-    max-height: 80%;
+    max-height: 20em;
 }
 
 .history-articles{
@@ -155,7 +155,21 @@ article>figure>img, .credits-img>img{
     justify-content: center;
     align-items: center;
 }
-/* colors for the project #FEFAF6, #EADBC8, #DAC0A3, 102C57*/
+/* Java and JS page */
+.p-links{
+    padding-bottom: 2em;
+}
+.p-links >a, .credits-other>a{
+    color: #102C57;
+    font-weight: 600;
+    text-decoration: underline;
+    transition: color 0.3s ease-in-out;
+
+}
+p>a:hover, .credits-other>a:hover{
+    color: #DAC0A3;
+}
+
 /* Form page */
 .font-learn{
     align-items: flex-start;
@@ -199,6 +213,37 @@ article>figure>img, .credits-img>img{
     margin:auto auto 1em auto;
     overflow-x: auto;
 }
+.issue-table tr:nth-child(odd){
+    background-color: #e4dccf;
+}
+
+/* Credits page */
+
+.credits-grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.credits-grid p{
+    text-indent: 0.5in;
+    
+}
+.credits-grid p::first-letter{
+    text-transform: uppercase;
+}
+.credits-grid p::first-line{
+    text-indent: 0;
+}
+.credits-other{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+.credits-other>a{
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
 /* web-110 Objectives */
 .courseImg {
     text-align: center;
@@ -211,18 +256,7 @@ article>figure>img, .credits-img>img{
     background-repeat: no-repeat;
     box-shadow: 0.1em 0.1em 0.1em rgba(35, 82, 79, 0.3);
 }
-/* Credits page */
 
-.credits-grid{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-
-
-/* web110 page */
 .CourseTopContent {
     text-align: center;
 }
