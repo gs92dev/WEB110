@@ -275,6 +275,7 @@ p > a:hover,
 
 /* Target image on credits page */
 article > figure,
+div > figure,
 .credits-img {
   max-height: 30em;
   max-width: 100%;
@@ -285,7 +286,8 @@ article > figure,
   justify-content: center;
 }
 article > figure > img,
-.credits-img > img {
+.credits-img > img,
+div > figure > img {
   max-width: 100%;
   max-height: 20em;
 }
