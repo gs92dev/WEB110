@@ -493,6 +493,7 @@ table caption {
 .description {
   background-color: #fefaf6;
   max-width: 50em;
+  margin: auto;
 }
 
 .courseIntroP,
@@ -584,9 +585,21 @@ table caption {
     max-width: 50em;
   }
   /* web 110 description */
+  .objectivesWrapper {
+    max-width: 100%;
+  }
   .objectives {
     display: flex;
-    gap: 5em;
+    flex-direction: column;
+    gap: 0 1em;
+    max-height: 12rem;
+    flex-wrap: wrap;
+    margin: auto;
+    text-align: left;
+  }
+  .objectives > li {
+    max-width: 100%;
+    text-align: justify;
   }
   .competencies-list {
     display: grid;
