@@ -9,7 +9,12 @@
   .footerNavigation {
     display: none;
   }
-  section article figure {
+  img,
+  form,
+  figcaption {
+    display: none;
+  }
+  figure {
     display: none;
   }
 
