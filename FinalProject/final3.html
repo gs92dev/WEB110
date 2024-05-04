@@ -1,3 +1,4 @@
+<!-- Guilherme dos Santos 05 May 2024 -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -17,9 +18,9 @@
         flex-direction: column;
         gap: 1em;
         justify-content: left;
-        margin: 1em auto 2em auto;
+        margin: 1em auto 0 auto;
         max-width: 95%;
-        padding: 0.5em;
+        padding: 1em;
       }
       /* Apply flex col to a few elements */
       .form-flex-col {
@@ -67,13 +68,21 @@
         align-items: center;
         flex-wrap: wrap;
       }
+      .topics {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+      }
       .form-radio {
         display: flex;
         align-items: center;
         justify-content: center;
       }
       button[type="submit"] {
-        padding: 0.25em;
+        font-size: 1em;
+        padding: 0.5em 1em;
         justify-self: center;
         align-self: center;
         color: wheat;
@@ -96,7 +105,6 @@
           gap: 1em 1em;
           grid-template-columns: 1fr 1fr;
           grid-template-rows: auto;
-          margin: 1em auto 2em auto;
           max-width: 60em;
           padding: 1em;
         }
@@ -120,6 +128,9 @@
           grid-column: 2 / 3;
           grid-row: 3 / 4;
         }
+        .topics {
+          flex-direction: row;
+        }
       }
     </style>
   </head>
@@ -128,7 +139,7 @@
       <header><h1>JavaScript - it's not Java!</h1></header>
       <nav>
         <ul>
-          <li><a href="./index.html">Home</a></li>
+          <li><a href="./final1.html">Home</a></li>
           <li><a href="./final2.html">JS and Java</a></li>
           <li><a href="./final3.html">Form</a></li>
           <li><a href="./final4.html">Credits</a></li>
@@ -209,13 +220,13 @@
             </div>
             <!-- Two classes so I can share the same style in different components -->
             <div class="form-more form-flex-col">
-              <label for="topic">What language do you want to know more?</label>
+              <label for="java">What language do you want to know more?</label>
               <div>
                 <input
                   class="input-styles checkbox-styles"
                   type="checkbox"
                   id="java"
-                  name="topic"
+                  name="java"
                   value="java"
                 />
                 <label for="java">Java</label>
@@ -223,11 +234,10 @@
                   class="input-styles checkbox-styles"
                   type="checkbox"
                   id="javascript"
-                  name="topic"
+                  name="javascript"
                   value="javascript"
                 />
                 <label for="javascript">JavaScript</label>
-
                 <input
                   class="input-styles checkbox-styles"
                   type="checkbox"
@@ -243,31 +253,31 @@
               <label for="topic"
                 >What topics do you want to know more about?</label
               >
-              <div>
+              <div class="topics">
                 <input
                   class="input-styles checkbox-styles"
                   type="checkbox"
-                  id="java"
-                  name="topic"
-                  value="java"
+                  id="programming"
+                  name="programming"
+                  value="programming"
                 />
-                <label for="java">Programming</label>
+                <label for="programming">Programming</label>
                 <input
                   class="input-styles checkbox-styles"
                   type="checkbox"
-                  id="javascript"
-                  name="topic"
-                  value="javascript"
+                  id="frameworks"
+                  name="frameworks"
+                  value="frameworks"
                 />
-                <label for="javascript">Frameworks</label>
+                <label for="frameworks">Frameworks</label>
                 <input
                   class="input-styles checkbox-styles"
                   type="checkbox"
-                  id="both"
-                  name="topic"
-                  value="both"
+                  id="usecases"
+                  name="usecases"
+                  value="usecases"
                 />
-                <label for="both">Use cases</label>
+                <label for="usecases">Use cases</label>
               </div>
             </div>
             <div class="form-radio">
@@ -289,7 +299,7 @@
     <footer class="footerNavigation">
       <nav>
         <ul>
-          <li><a href="./index.html">Home</a></li>
+          <li><a href="./final1.html">Home</a></li>
           <li><a href="./final2.html">JS and Java</a></li>
           <li><a href="./final3.html">Form</a></li>
           <li><a href="./final4.html">Credits</a></li>
